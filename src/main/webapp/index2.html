@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body>
+Hello world
+    <p th:text="${dates.format(new java.util.Date(), 'dd/MMM/yyyy HH:mm')}"> </p>
+    <p th:text="${number.formatInteger(1234,7)}"> </p>
+
+</body>
+</html>
